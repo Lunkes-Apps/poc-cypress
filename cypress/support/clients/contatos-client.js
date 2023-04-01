@@ -1,4 +1,4 @@
-export function postFormulario(formulario, validacao) {
-    return cy.request('GET', 'http://localhost:3000/api/contatos')
+export function postFormulario(formulario, validacao, path) {
+    return cy.request('POST', path, formulario)
         .then(validacao)
 }

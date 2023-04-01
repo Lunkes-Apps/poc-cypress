@@ -30,10 +30,6 @@ export class Formulario {
         return this
     }
 
-    teste(valor) {
-        cy.get('[name="origem"]').type(valor)
-    }
-
     submit() {
         cy.get('button').contains('Comparar Textos')
             .click()
